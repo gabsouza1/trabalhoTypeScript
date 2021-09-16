@@ -193,7 +193,7 @@ try{
     console.log(vendedores.descontoSalario(10000))
     console.log(vendedores)
 }catch(err:any){
-    console.log(err)
+    console.log(err.message)
 }
 
 
@@ -206,7 +206,7 @@ try{
     vendedorFisica.comissao('Centro oeste', 15000, 3000)
     console.log(vendedorFisica)
 }catch(err:any){
-    console.log(err)
+    console.log(err.message)
 }
 
 const vendedorJuridico = new VendedorPessoaJuridica('Tesla', 5000, 'Gabriel', 7500, 13090)
@@ -220,5 +220,5 @@ try{
     vendedorJuridico.bonusFuncionario(5000, 0.3, 15000)
     console.log(vendedorJuridico)
 }catch(err:any){
-    console.log(err)
+    console.log(err.message)
 }
